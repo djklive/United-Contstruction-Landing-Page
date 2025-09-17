@@ -60,9 +60,10 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            United Construction for Africa designs and builds world-class infrastructure projects 
-            to meet Africa's needs in water, energy, mobility, and building construction for 
-            communities and businesses.
+            United Construction for Africa, specialized in construction and public works,
+            assists individuals, businesses, and government agencies in carrying out their construction
+            and infrastructure projects. With a qualified team and innovative solutions, we guarantee quality,
+            reliability, and on-time delivery.
           </motion.p>
 
           <motion.div

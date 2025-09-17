@@ -14,31 +14,31 @@ export function Services() {
       icon: Truck,
       title: 'Public Works',
       description: 'Road construction, bridges, and large-scale infrastructure development',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Wrench,
       title: 'Renovation & Rehabilitation',
       description: 'Modernizing existing structures and bringing new life to old buildings',
-      color: 'from-gray-500 to-gray-600'
+      color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Ruler,
       title: 'Civil Engineering',
       description: 'Comprehensive engineering solutions for complex construction challenges',
-      color: 'from-blue-600 to-blue-700'
+      color: 'from-blue-500 to-blue-600'
     },
     {
       icon: TreePine,
       title: 'Outdoor Development',
       description: 'Landscaping, paving, public spaces, and environmental infrastructure',
-      color: 'from-green-500 to-green-600'
+      color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Droplets,
       title: 'Hydraulic Works',
       description: 'Water systems, drainage, and water management infrastructure projects',
-      color: 'from-cyan-500 to-cyan-600'
+      color: 'from-blue-500 to-blue-600'
     }
   ];
 
@@ -115,7 +115,7 @@ export function Services() {
             Ready to start your next construction project?
           </p>
           <motion.button
-            className="bg-gradient-to-r from-blue-600 to-orange-500 text-white px-8 py-3 rounded-lg hover:shadow-lg transition-all duration-300"
+            className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => {

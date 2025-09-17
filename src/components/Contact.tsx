@@ -53,7 +53,7 @@ export function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+234 123 456 7890', '+234 987 654 3210'],
+      details: ['+237 6 99 99 99 99', '+237 6 99 99 99 99'],
       color: 'from-blue-500 to-blue-600'
     },
     {
@@ -65,7 +65,7 @@ export function Contact() {
     {
       icon: MapPin,
       title: 'Address',
-      details: ['123 Construction Avenue', 'Lagos, Nigeria'],
+      details: ['Yaoundé, Cameroon'],
       color: 'from-gray-500 to-gray-600'
     },
     {
@@ -87,7 +87,7 @@ export function Contact() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl mb-6 text-gray-800">
-            Get Your <span className="text-blue-600">Free Quote</span>
+            Contact <span className="text-blue-600">Us</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Ready to start your construction project? Contact us today for a free consultation 
@@ -153,7 +153,7 @@ export function Contact() {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full"
-                    placeholder="+234 123 456 7890"
+                    placeholder="+237 6 99 99 99 99"
                   />
                 </div>
                 
@@ -196,7 +196,7 @@ export function Contact() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white py-3 rounded-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white py-3 rounded-lg transition-all duration-300 hover:shadow-lg disabled:opacity-50"
               >
                 {isSubmitting ? 'Sending...' : 'Request Free Quote'}
               </Button>

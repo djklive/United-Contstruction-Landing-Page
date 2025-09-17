@@ -61,7 +61,7 @@ export function Projects() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl mb-6 text-gray-800">
-            Our <span className="text-blue-600">Project Portfolio</span>
+            Our <span className="text-blue-600">Project</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Explore some of our recent projects that showcase our commitment to excellence 

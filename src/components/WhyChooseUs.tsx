@@ -72,7 +72,7 @@ export function WhyChooseUs() {
                 <div className="relative z-10 flex items-start space-x-6">
                   {/* Icon */}
                   <motion.div
-                    className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-blue-500 to-orange-500 rounded-xl flex items-center justify-center"
+                    className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl flex items-center justify-center"
                     whileHover={{ rotate: 360 }}
                     transition={{ duration: 0.6 }}
                   >
