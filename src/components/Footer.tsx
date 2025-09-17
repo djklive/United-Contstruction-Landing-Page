@@ -49,13 +49,14 @@ export function Footer() {
           >
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-orange-500 rounded-lg flex items-center justify-center">
+                {/*<div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-orange-500 rounded-lg flex items-center justify-center">
                   <span className="text-white">UC</span>
                 </div>
                 <div>
                   <h3 className="text-lg">United Construction</h3>
                   <p className="text-xs text-gray-400">for Africa</p>
-                </div>
+                </div>*/}
+                <img src="/Logo_Professionnel_3D_UNITED_CONSTRUCTION_FOR_AFRICA_by_E_pack_Solutions.png" alt="United Construction" width={100} height={100} />
               </div>
               <p className="text-gray-400 leading-relaxed">
                 Building the future of Africa through innovative construction and civil engineering solutions since 2021.

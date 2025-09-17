@@ -22,7 +22,7 @@ export function Projects() {
     {
       title: 'Residential Villa Complex',
       category: 'Residential',
-      image: 'https://images.unsplash.com/photo-1577199001468-44c049e7603f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjB0ZWFtJTIwYWZyaWNhfGVufDF8fHx8MTc1ODEwODM1N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/Project-3.jpg',
       description: 'Luxury residential complex with 200 modern villas, featuring contemporary design and eco-friendly materials.',
       completion: '2024'
     }

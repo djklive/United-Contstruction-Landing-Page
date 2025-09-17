@@ -66,16 +66,16 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('about')} className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-blue-600 transition-colors`}>
+            <button onClick={() => scrollToSection('about')} className={`${isScrolled ? 'text-black' : 'text-white'} font-bold px-4 py-2 hover:text-blue-600 transition-colors`}>
               About
             </button>
-            <button onClick={() => scrollToSection('services')} className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-blue-600 transition-colors`}>
+            <button onClick={() => scrollToSection('services')} className={`${isScrolled ? 'text-black' : 'text-white'} font-bold px-4 py-2 hover:text-blue-600 transition-colors`}>
               Services
             </button>
-            <button onClick={() => scrollToSection('projects')} className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-blue-600 transition-colors`}>
+            <button onClick={() => scrollToSection('projects')} className={`${isScrolled ? 'text-black' : 'text-white'} font-bold px-4 py-2 hover:text-blue-600 transition-colors`}>
               Projects
             </button>
-            <button onClick={() => scrollToSection('contact')} className={`${isScrolled ? 'text-black' : 'text-white'} hover:text-blue-600 transition-colors`}>
+            <button onClick={() => scrollToSection('contact')} className={`${isScrolled ? 'text-black' : 'text-white'} font-bold px-4 py-2 hover:text-blue-600 transition-colors`}>
               Contact
             </button>
           </nav>
@@ -87,7 +87,7 @@ export function Header() {
               className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-lg flex items-center gap-2"
             >
               <WhatsAppIcon className="w-5 h-5" />
-              Contactez nous
+              Contact Us
             </Button>
           </div>
 
@@ -126,7 +126,7 @@ export function Header() {
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white mt-4 flex items-center gap-2"
               >
                 <WhatsAppIcon className="w-5 h-5" />
-                Contactez nous
+                Contact Us
               </Button>
             </nav>
           </motion.div>

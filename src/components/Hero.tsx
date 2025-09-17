@@ -76,7 +76,7 @@ export function Hero() {
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               <WhatsAppIcon className="w-5 h-5" />
-              Contactez nous
+              Contact Us
             </Button>
             
             <Button
