@@ -22,7 +22,7 @@ export function Projects() {
     {
       title: 'Residential Villa Complex',
       category: 'Residential',
-      image: '/Project-3.jpg',
+      image: '/Project-5.jpg',
       description: 'Luxury residential complex with 200 modern villas, featuring contemporary design and eco-friendly materials.',
       completion: '2024'
     }

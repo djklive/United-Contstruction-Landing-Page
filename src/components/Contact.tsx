@@ -6,6 +6,9 @@ import { Textarea } from './ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import { toast } from 'sonner';
+import { Toaster } from 'sonner';
+import { sendEmail } from '../lib/emailjs';
+import { PaginationComponent } from './Pagination';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -16,6 +19,10 @@ export function Contact() {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  // État de pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -35,31 +42,40 @@ export function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    toast.success("Thank you! We'll get back to you within 24 hours.");
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      projectType: '',
-      message: ''
-    });
-    setIsSubmitting(false);
+    try {
+      const success = await sendEmail(formData);
+      
+      if (success) {
+        toast.success("Thank you! We'll get back to you within 24 hours.");
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          projectType: '',
+          message: ''
+        });
+      } else {
+        toast.error("Failed to send message. Please try again or contact us directly.");
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error("An error occurred. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+237 6 99 99 99 99', '+237 6 99 99 99 99'],
+      details: ['+237 6 90 99 60 92', '+237 6 73 71 56 02'],
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@unitedconstructionafrica.com', 'projects@unitedconstructionafrica.com'],
+      details: ['uca@gmail.com'],
       color: 'from-orange-500 to-orange-600'
     },
     {
@@ -200,6 +216,15 @@ export function Contact() {
               >
                 {isSubmitting ? 'Sending...' : 'Request Free Quote'}
               </Button>
+              
+              {/* Composant de pagination */}
+              {totalPages > 1 && (
+                <PaginationComponent
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onPageChange={setCurrentPage}
+                />
+              )}
             </form>
           </motion.div>
 
@@ -264,6 +289,16 @@ export function Contact() {
           </motion.div>
         </div>
       </div>
+      
+      {/* Toaster avec z-index élevé */}
+      <Toaster 
+        position="top-right" 
+        toastOptions={{
+          style: {
+            zIndex: 9999,
+          },
+        }}
+      />
     </section>
   );
 }
