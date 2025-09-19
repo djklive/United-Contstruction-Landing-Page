@@ -2,6 +2,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Services } from './components/Services';
+import { DesignPlans } from './components/DesignPlans';
 import { Projects } from './components/Projects';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { FAQ } from './components/FAQ';
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <About />
         <Services />
+        <DesignPlans />
         <Projects />
         <WhyChooseUs />
         <FAQ />
