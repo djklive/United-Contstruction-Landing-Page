@@ -87,7 +87,7 @@ export function Header() {
               className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-lg flex items-center gap-2"
             >
               <WhatsAppIcon className="w-5 h-5" />
-              <a href="https://wa.link/aw8ptj">Contact Us</a>
+              <a href="https://wa.link/tkkfi9">Contact Us</a>
             </Button>
           </div>
 
@@ -126,7 +126,7 @@ export function Header() {
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white mt-4 flex items-center gap-2"
               >
                 <WhatsAppIcon className="w-5 h-5" />
-                <a href="https://wa.link/aw8ptj">Contact Us</a>
+                <a href="https://wa.link/tkkfi9">Contact Us</a>
               </Button>
             </nav>
           </motion.div>

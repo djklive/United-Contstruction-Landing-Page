@@ -28,7 +28,7 @@ export function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="/Hero.jpg"
+          src="/Logo_Professionnel_3D_UNITED_CONSTRUCTION_FOR_AFRICA_by_E_pack_Solutions.png"
           alt="Construction site with workers"
           className="w-full h-full object-cover"
         />
@@ -77,7 +77,7 @@ export function Hero() {
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 text-lg rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
               <WhatsAppIcon className="w-5 h-5" />
-              <a href="https://wa.link/aw8ptj">Contact Us</a>
+              <a href="https://wa.link/tkkfi9">Contact Us</a>
             </Button>
             
             <Button
